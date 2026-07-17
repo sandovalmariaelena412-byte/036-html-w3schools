@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>HTML Charset</h1>
+<p>Para mostrar una pagina HTML correctamente, un navegador web debe conocer el conjunto de caracteres (charset) usado en la pagina.</p>
+
+<h2>Que es un Charset?</h2>
+<p>Todos los navegadores web y programas de correo electronico entienden ASCII (leen texto sin formato como codigo ASCII). Si un navegador o programa no reconoce el charset de un documento HTML, no puede mostrar los caracteres correctamente.</p>
+
+<h2>HTML Charset Setting</h2>
+<p>Para que el navegador entienda que caracteres usar, se debe especificar el conjunto de caracteres en la etiqueta head, con la etiqueta meta charset:</p>
+<p><code>&lt;meta charset="UTF-8"&gt;</code></p>
+<p>Nota: si una pagina web empieza con &lt;!DOCTYPE html&gt; (lo que indica HTML5), este meta tag es opcional, ya que UTF-8 es el charset por defecto en HTML5.</p>
+
+<h2>AT History</h2>
+<p>ASCII fue el primer estandar de codificacion de caracteres. Definio 128 caracteres diferentes que se podian usar en internet: numeros (0-9), letras del ingles (A-Z), y algunos caracteres especiales como ! $ + - ( ) @ &lt; &gt; . # ?</p>
+<p>ANSI (Windows-1252) fue el primer conjunto de caracteres de Windows.</p>
+<p>ISO-8859-1 fue el conjunto de caracteres por defecto para HTML 4.</p>
+<p>UTF-8 cubre casi todos los caracteres y simbolos del mundo.</p>
+
+<h2>ASCII vs ANSI vs ISO-8859-1 vs UTF-8</h2>
+<p>ANSI es identico a ASCII para los valores de 0 a 127. ANSI tiene un conjunto propio de caracteres para los valores de 128 a 159. ANSI es identico a UTF-8 para los valores de 160 a 255.</p>
+<p>ISO-8859-1 es identico a ASCII para los valores de 0 a 127. ISO-8859-1 no usa los valores de 128 a 159. ISO-8859-1 es identico a UTF-8 para los valores de 160 a 255.</p>
+<p>UTF-8 es identico a ASCII para los valores de 0 a 127. UTF-8 no usa los valores de 128 a 159. UTF-8 es identico tanto a ANSI como a 8859-1 para los valores de 160 a 255. UTF-8 continua desde el valor 256 con mas de 10,000 caracteres diferentes.</p>
+
+<h2>Character Encoding for the Web</h2>
+<p>Para HTML5, el estandar de codificacion de caracteres es UTF-8. Esto no siempre fue asi: la codificacion para la web temprana fue ASCII. Luego, de HTML 2.0 a HTML 4.01, ISO-8859-1 fue considerado el estandar. Con XML y HTML5, UTF-8 finalmente llego y resolvio muchos problemas de codificacion de caracteres.</p>
+
+</body>
+</html>
