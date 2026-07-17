@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Entities</h1>
+<p>Los caracteres reservados en HTML deben reemplazarse con entidades: menor que (&lt;) = &amp;lt;  |  mayor que (&gt;) = &amp;gt;</p>
+
+<h2>HTML Character Entities</h2>
+<p>Algunos caracteres estan reservados en HTML. Si usas los signos menor que (&lt;) o mayor que (&gt;) en tu texto, el navegador podria confundirlos con etiquetas.</p>
+<p>Se pueden usar nombres de entidad o numeros de entidad para mostrar caracteres HTML reservados.</p>
+<p>Los nombres de entidad se ven asi: <code>&amp;entity_name;</code></p>
+<p>Los numeros de entidad se ven asi: <code>&amp;#entity_number;</code></p>
+<p>Para mostrar el signo menor que (&lt;) debemos escribir: <code>&amp;lt;</code> o <code>&amp;#60;</code></p>
+<p>Los nombres de entidad son mas faciles de recordar que los numeros.</p>
+
+<h2>Non-breaking Space</h2>
+<p>Una entidad de uso comun en HTML es el espacio sin salto de linea: &amp;nbsp;</p>
+<p>Un espacio sin salto de linea es un espacio que no se rompe en una nueva linea. Dos palabras separadas por este espacio se mantienen juntas, lo cual es util cuando separarlas seria molesto.</p>
+<p>Ejemplos:</p>
+<p>10&nbsp;km/h</p>
+<p>10&nbsp;PM</p>
+<p>Otro uso comun del espacio sin salto de linea es evitar que los navegadores recorten espacios en las paginas HTML. Si escribes 10 espacios en tu texto, el navegador eliminara 9 de ellos. Para agregar espacios reales, se usa la entidad &amp;nbsp;</p>
+<p>El guion sin salto de linea (&amp;#8209;) se usa para definir un guion que no se rompe en una nueva linea.</p>
+
+<h2>Some Useful HTML Character Entities</h2>
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Result</th>
+    <th>Description</th>
+    <th>Name</th>
+    <th>Number</th>
+  </tr>
+  <tr><td>&nbsp;</td><td>non-breaking space</td><td>&amp;nbsp;</td><td>&amp;#160;</td></tr>
+  <tr><td>&lt;</td><td>less than</td><td>&amp;lt;</td><td>&amp;#60;</td></tr>
+  <tr><td>&gt;</td><td>greater than</td><td>&amp;gt;</td><td>&amp;#62;</td></tr>
+  <tr><td>&amp;</td><td>ampersand</td><td>&amp;amp;</td><td>&amp;#38;</td></tr>
+  <tr><td>&quot;</td><td>double quotation mark</td><td>&amp;quot;</td><td>&amp;#34;</td></tr>
+  <tr><td>&apos;</td><td>single quotation mark</td><td>&amp;apos;</td><td>&amp;#39;</td></tr>
+  <tr><td>&cent;</td><td>cent</td><td>&amp;cent;</td><td>&amp;#162;</td></tr>
+  <tr><td>&pound;</td><td>pound</td><td>&amp;pound;</td><td>&amp;#163;</td></tr>
+  <tr><td>&yen;</td><td>yen</td><td>&amp;yen;</td><td>&amp;#165;</td></tr>
+  <tr><td>&euro;</td><td>euro</td><td>&amp;euro;</td><td>&amp;#8364;</td></tr>
+  <tr><td>&copy;</td><td>copyright</td><td>&amp;copy;</td><td>&amp;#169;</td></tr>
+  <tr><td>&reg;</td><td>registered trademark</td><td>&amp;reg;</td><td>&amp;#174;</td></tr>
+  <tr><td>&trade;</td><td>trademark</td><td>&amp;trade;</td><td>&amp;#8482;</td></tr>
+</table>
+<p>Nota: los nombres de entidad distinguen mayusculas de minusculas.</p>
+
+<h2>Combining Diacritical Marks</h2>
+<p>Una marca diacritica es un "glifo" agregado a una letra. Algunas marcas diacriticas, como grave y aguda, se llaman acentos. Pueden aparecer arriba o abajo de una letra, dentro de ella, o entre dos letras.</p>
+<p>Se pueden combinar con caracteres alfanumericos para producir un caracter que no esta presente en el conjunto de caracteres (encoding) usado en la pagina.</p>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Mark</th>
+    <th>Character</th>
+    <th>Construct</th>
+    <th>Result</th>
+  </tr>
+  <tr><td>grave</td><td>a</td><td><code>a&amp;#768;</code></td><td>a&#768;</td></tr>
+  <tr><td>acute</td><td>a</td><td><code>a&amp;#769;</code></td><td>a&#769;</td></tr>
+  <tr><td>circumflex</td><td>a</td><td><code>a&amp;#770;</code></td><td>a&#770;</td></tr>
+  <tr><td>tilde</td><td>a</td><td><code>a&amp;#771;</code></td><td>a&#771;</td></tr>
+  <tr><td>grave</td><td>O</td><td><code>O&amp;#768;</code></td><td>O&#768;</td></tr>
+  <tr><td>acute</td><td>O</td><td><code>O&amp;#769;</code></td><td>O&#769;</td></tr>
+  <tr><td>circumflex</td><td>O</td><td><code>O&amp;#770;</code></td><td>O&#770;</td></tr>
+  <tr><td>tilde</td><td>O</td><td><code>O&amp;#771;</code></td><td>O&#771;</td></tr>
+</table>
+
+</body>
+</html>
