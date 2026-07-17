@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Meaningful Page Title</title>
+</head>
+<body>
+
+<h1>HTML - The Head Element</h1>
+<p>El elemento head es un contenedor para metadatos (datos sobre datos), y se coloca entre la etiqueta html y la etiqueta body.</p>
+<p>Los metadatos no se muestran en la pagina. Normalmente definen el titulo del documento, el charset, estilos, scripts y otra informacion.</p>
+
+<h2>The HTML title Element</h2>
+<p>El elemento title define el titulo del documento. Debe ser solo texto, y se muestra en la barra de titulo del navegador o en la pestana. Es obligatorio en todo documento HTML.</p>
+<p>El contenido del titulo es muy importante para el SEO (posicionamiento en buscadores), ya que los algoritmos de busqueda lo usan para decidir el orden al listar paginas en los resultados.</p>
+<p>El elemento title: define un titulo en la barra del navegador, provee un titulo cuando se agrega a favoritos, y muestra un titulo en los resultados de busqueda.</p>
+
+<h2>The HTML style Element</h2>
+<style>
+body {background-color: powderblue;}
+h1 {color: red;}
+p {color: blue;}
+</style>
+<p>El elemento style define informacion de estilo para una sola pagina HTML.</p>
+
+<h2>The HTML link Element</h2>
+<p>El elemento link define la relacion entre el documento actual y un recurso externo. Se usa mas frecuentemente para enlazar a hojas de estilo externas.</p>
+<p>Ejemplo de sintaxis: <code>&lt;link rel="stylesheet" href="mystyle.css"&gt;</code></p>
+
+<h2>The HTML meta Element</h2>
+<p>El elemento meta se usa tipicamente para especificar el charset, la descripcion de la pagina, palabras clave, autor del documento, y ajustes de viewport. Los metadatos no se muestran en la pagina, pero son usados por navegadores, buscadores y otros servicios web.</p>
+
+<h3>Definir el charset usado</h3>
+<meta charset="UTF-8">
+
+<h3>Definir palabras clave para buscadores</h3>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+
+<h3>Definir una descripcion de la pagina web</h3>
+<meta name="description" content="Free Web tutorials">
+
+<h3>Definir el autor de la pagina</h3>
+<meta name="author" content="John Doe">
+
+<h3>Refrescar el documento cada 30 segundos</h3>
+<meta http-equiv="refresh" content="30">
+
+<h2>Setting The Viewport</h2>
+<p>El viewport es el area visible de una pagina web para el usuario. Varia segun el dispositivo: es mas pequeno en un telefono que en una pantalla de computadora.</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p>Esto le da al navegador instrucciones sobre como controlar las dimensiones y el zoom de la pagina.</p>
+<p>La parte width=device-width ajusta el ancho de la pagina para que siga el ancho de pantalla del dispositivo.</p>
+<p>La parte initial-scale=1.0 define el nivel de zoom inicial cuando la pagina se carga por primera vez.</p>
+
+<h2>The HTML script Element</h2>
+<p>El elemento script se usa para definir scripts del lado del cliente (JavaScript).</p>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+myFunction();
+</script>
+
+<h2>The HTML base Element</h2>
+<p>El elemento base especifica la URL base y/o el target por defecto para todos los enlaces relativos de una pagina. Debe tener el atributo href, target, o ambos. Solo puede haber un elemento base en el documento.</p>
+<p>Ejemplo de sintaxis:</p>
+<pre>
+&lt;head&gt;
+&lt;base href="https://www.w3schools.com/" target="_blank"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;img src="images/stickman.gif" width="24" height="39" alt="Stickman"&gt;
+&lt;a href="tags/tag_base.asp"&gt;HTML base Tag&lt;/a&gt;
+&lt;/body&gt;
+</pre>
+
+
+</body>
+</html>
