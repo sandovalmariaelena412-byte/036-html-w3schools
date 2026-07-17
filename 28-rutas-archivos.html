@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML File Paths</h1>
+<p>Una ruta de archivo describe la ubicacion de un archivo dentro de la estructura de carpetas de un sitio web.</p>
+
+<h2>File Path Examples</h2>
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Path</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>&lt;img src="picture.jpg"&gt;</code></td>
+    <td>El archivo "picture.jpg" esta ubicado en la misma carpeta que la pagina actual</td>
+  </tr>
+  <tr>
+    <td><code>&lt;img src="images/picture.jpg"&gt;</code></td>
+    <td>El archivo "picture.jpg" esta ubicado en la carpeta images dentro de la carpeta actual</td>
+  </tr>
+  <tr>
+    <td><code>&lt;img src="/images/picture.jpg"&gt;</code></td>
+    <td>El archivo "picture.jpg" esta ubicado en la carpeta images en la raiz del sitio web actual</td>
+  </tr>
+  <tr>
+    <td><code>&lt;img src="../picture.jpg"&gt;</code></td>
+    <td>El archivo "picture.jpg" esta ubicado en la carpeta un nivel arriba de la carpeta actual</td>
+  </tr>
+</table>
+
+<p>Las rutas de archivo se usan al enlazar archivos externos, como paginas web, imagenes, hojas de estilo y JavaScript.</p>
+
+<h2>Absolute File Paths</h2>
+<p>Una ruta de archivo absoluta es la URL completa a un archivo.</p>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+<h2>Relative File Paths</h2>
+<p>Una ruta de archivo relativa apunta a un archivo en relacion a la pagina actual.</p>
+
+<h3>Archivo en la raiz del sitio actual</h3>
+<img src="/images/picture.jpg" alt="Mountain">
+
+<h3>Archivo en la carpeta actual</h3>
+<img src="images/picture.jpg" alt="Mountain">
+
+<h3>Archivo un nivel arriba de la carpeta actual</h3>
+<img src="../images/picture.jpg" alt="Mountain">
+
+<h2>Best Practice</h2>
+<p>Es una buena practica usar rutas de archivo relativas cuando sea posible.</p>
+<p>Al usar rutas relativas, las paginas web no quedan atadas a la URL base actual. Todos los enlaces funcionaran tanto en la computadora local (localhost) como en el dominio publico actual y en futuros dominios.</p>
+
+</body>
+</html>
