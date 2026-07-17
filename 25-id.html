@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>The HTML id Attribute</h1>
+<p>El atributo id se usa para especificar un id unico para un elemento HTML. No puede haber mas de un elemento con el mismo id en un documento HTML.</p>
+
+<h2>The id Attribute</h2>
+<p>El valor del atributo id debe ser unico dentro del documento HTML. Se usa para apuntar a una declaracion de estilo especifica en una hoja de estilos, y tambien es usado por JavaScript para acceder y manipular el elemento con ese id especifico.</p>
+<p>La sintaxis es: un simbolo numeral (#) seguido del nombre del id, y luego las propiedades CSS entre llaves.</p>
+<h1 id="myHeader">My Header</h1>
+<p>Nota: el nombre del id distingue mayusculas de minusculas. Debe contener al menos un caracter, no puede empezar con un numero, y no debe contener espacios en blanco.</p>
+
+<h2>Difference Between Class and ID</h2>
+<p>Un nombre de clase puede ser usado por multiples elementos HTML, mientras que un nombre de id debe ser usado por un solo elemento dentro de la pagina.</p>
+
+<h1 id="myHeader">My Cities</h1>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2>HTML Bookmarks with ID and Links</h2>
+<p>Los marcadores HTML permiten a los lectores saltar a partes especificas de una pagina web. Son utiles si la pagina es muy larga.</p>
+<p>Para usar un marcador, primero se crea, y luego se agrega un enlace hacia el. Al hacer clic en el enlace, la pagina se desplaza hasta la ubicacion del marcador.</p>
+
+<h3>Paso 1: crear el marcador con el atributo id</h3>
+<h2 id="C4">Chapter 4</h2>
+
+<h3>Paso 2: agregar un enlace al marcador, desde la misma pagina</h3>
+<a href="#C4">Jump to Chapter 4</a>
+
+<h3>O agregar un enlace al marcador desde otra pagina</h3>
+<p>Ejemplo de sintaxis: <code>&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;</code></p>
+
+<h2>Using the id Attribute in JavaScript</h2>
+<p>El atributo id tambien puede ser usado por JavaScript para realizar tareas en ese elemento especifico, con el metodo getElementById().</p>
+<h1 id="myHeader3">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+<script>
+function displayResult() {
+  document.getElementById("myHeader3").innerHTML = "Have a nice day!";
+}
+</script>
+
+<style>
+#myHeader {
+  background-color: lightblue;
+  padding: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Cities</h1>
+
+<h2>London</h2>
+<p>London is the capital of England.</p>
+
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<a href="#myHeader">Back to top</a
+
+
+</body>
+</html>
