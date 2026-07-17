@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Form Attributes</h1>
+
+<h2>The action Attribute</h2>
+<p>El atributo action define la accion a realizar cuando se envia el formulario. Normalmente, los datos del formulario se envian a un archivo del servidor cuando el usuario hace clic en el boton de envio.</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>Si se omite el atributo action, los datos del formulario se envian a la pagina actual.</p>
+
+<h2>The target Attribute</h2>
+<p>El atributo target especifica donde se debe mostrar la respuesta despues de enviar el formulario. Valores posibles: _blank, _self, _parent, _top.</p>
+<form action="/action_page.php" target="_blank">
+  <label for="fname2">First name:</label><br>
+  <input type="text" id="fname2" name="fname2" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>The method Attribute</h2>
+<p>El atributo method especifica el metodo HTTP a usar al enviar los datos del formulario. Los datos pueden enviarse como variables de URL (method="get") o como una transaccion HTTP post (method="post").</p>
+<form action="/action_page.php" method="get">
+  <label for="fname3">First name:</label><br>
+  <input type="text" id="fname3" name="fname3" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>Notas sobre GET</h3>
+<p>GET agrega los datos del formulario a la URL, en pares nombre/valor. Nunca se debe usar GET para enviar informacion sensible, ya que el nombre y valor se muestran en la URL.</p>
+
+<h3>Notas sobre POST</h3>
+<p>POST agrega los datos del formulario dentro del cuerpo de la solicitud HTTP (los datos enviados no se muestran en la URL). POST no tiene limitaciones de tamano, y se puede usar para enviar grandes cantidades de datos. Siempre se recomienda usar POST si los datos del formulario contienen informacion sensible o personal.</p>
+<form action="/action_page.php" method="post">
+  <label for="fname4">First name:</label><br>
+  <input type="text" id="fname4" name="fname4" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>The autocomplete Attribute</h2>
+<p>El atributo autocomplete especifica si un formulario debe tener el autocompletado activado o desactivado. Cuando esta activado, el navegador completa automaticamente los valores basandose en valores que el usuario ha ingresado antes.</p>
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname5">First name:</label>
+  <input type="text" id="fname5" name="fname5"><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<h2>The novalidate Attribute</h2>
+<p>El atributo novalidate es un atributo booleano. Cuando esta presente, especifica que los datos del formulario no deben validarse al enviarse.</p>
+<form action="/action_page.php" novalidate>
+  <label for="email2">Enter your email:</label>
+  <input type="email" id="email2" name="email2"><br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
