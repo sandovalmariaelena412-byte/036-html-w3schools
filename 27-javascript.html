@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML JavaScript</h1>
+<p>JavaScript hace que las paginas HTML sean mas dinamicas e interactivas.</p>
+
+<h2>Example - My First JavaScript</h2>
+<p>Click me to display Date and Time.</p>
+<button type="button" onclick="document.getElementById('demoFecha').innerHTML = Date()">Click me to display Date and Time.</button>
+<p id="demoFecha"></p>
+
+<h2>The HTML script Tag</h2>
+<p>La etiqueta script se usa para definir un script del lado del cliente (JavaScript). El elemento script contiene sentencias de script, o apunta a un archivo de script externo mediante el atributo src.</p>
+<p>Usos comunes de JavaScript: manipulacion de imagenes, validacion de formularios, y cambios dinamicos de contenido.</p>
+<p>Para seleccionar un elemento HTML, JavaScript usa mas frecuentemente el metodo document.getElementById().</p>
+
+<p id="demo">JavaScript puede cambiar el contenido HTML.</p>
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<h2>A Taste of JavaScript</h2>
+
+<h3>JavaScript can change content</h3>
+<p id="demo1">Contenido original.</p>
+<button onclick="document.getElementById('demo1').innerHTML = 'Hello JavaScript!'">Cambiar contenido</button>
+
+<h3>JavaScript can change styles</h3>
+<p id="demo2">Texto de ejemplo.</p>
+<button onclick="
+document.getElementById('demo2').style.fontSize = '25px';
+document.getElementById('demo2').style.color = 'red';
+document.getElementById('demo2').style.backgroundColor = 'yellow';
+">Cambiar estilos</button>
+
+<h3>JavaScript can change attributes</h3>
+<img id="image" src="https://www.w3schools.com/images/w3schools_green.jpg" width="100">
+<button onclick="document.getElementById('image').src = 'https://www.w3schools.com/images/picture.jpg'">Cambiar imagen</button>
+
+<h2>The HTML noscript Tag</h2>
+<p>La etiqueta noscript define un contenido alternativo para mostrar a usuarios que tienen los scripts desactivados en su navegador, o cuyo navegador no soporta scripts.</p>
+<script>
+document.getElementById("demo3").innerHTML = "Hello JavaScript!";
+</script>
+<p id="demo3"></p>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+</html>
