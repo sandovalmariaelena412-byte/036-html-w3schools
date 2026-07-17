@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Forms</h1>
+<p>Un formulario HTML se usa para recolectar informacion ingresada por el usuario. La informacion normalmente se envia a un servidor para su procesamiento.</p>
+
+<h2>HTML Forms - Example</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>Si haces clic en el boton "Submit", los datos del formulario se enviaran a una pagina llamada "/action_page.php".</p>
+
+<h2>The form Element</h2>
+<p>El elemento form es un contenedor para distintos tipos de elementos de entrada, como: campos de texto, checkboxes, botones de radio, botones de envio, etc.</p>
+
+<h2>The input Element</h2>
+<p>El elemento input se puede mostrar de varias formas, dependiendo del atributo type.</p>
+<form>
+  <label for="fname2">First name:</label><br>
+  <input type="text" id="fname2" name="fname2"><br>
+  <label for="lname2">Last name:</label><br>
+  <input type="text" id="lname2" name="lname2">
+</form>
+<p>Nota: el formulario en si no es visible. Tambien, el ancho por defecto de un campo de entrada es 20 caracteres.</p>
+
+<h2>The label Element</h2>
+<p>El elemento label define una etiqueta para varios elementos de formulario, y es util para lectores de pantalla, ya que leeran en voz alta la etiqueta cuando el usuario enfoque el campo.</p>
+<p>El elemento label tambien ayuda a usuarios que tienen dificultad para hacer clic en areas muy pequenas (como botones de radio o checkboxes), ya que cuando el usuario hace clic en el texto dentro del label, tambien se activa el radio button o checkbox.</p>
+<p>El atributo for de la etiqueta label debe ser igual al atributo id del elemento input para vincularlos entre si.</p>
+
+<h2>Radio Buttons</h2>
+<p>El input type="radio" define un boton de radio. Los botones de radio permiten al usuario seleccionar UNA opcion entre un numero limitado de opciones.</p>
+<p>Choose your favorite Web language:</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+<h2>Checkboxes</h2>
+<p>El input type="checkbox" define un checkbox. Los checkboxes permiten al usuario seleccionar CERO o MAS opciones de un numero limitado de opciones.</p>
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+<h2>The Submit Button</h2>
+<p>El input type="submit" define un boton para enviar los datos del formulario a un manejador de formularios. El manejador es tipicamente un archivo del lado del servidor con un script para procesar la informacion ingresada.</p>
+<p>El manejador se especifica en el atributo action del formulario.</p>
+<form action="/action_page.php">
+  <label for="fname3">First name:</label><br>
+  <input type="text" id="fname3" name="fname3" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>Importante: el atributo name</h3>
+<p>Nota: si se omite el atributo name del input, los datos de ese campo no se enviaran en absoluto al enviar el formulario.</p>
+<form action="/action_page.php">
+  <label for="fname4">First name:</label><br>
+  <input type="text" id="fname4" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
