@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  }
+  h1.intro {
+    color: blue;
+    text-align: center;
+  }
+  .important {
+    background-color: yellow;
+  }
+  p.large {
+    font-size: 150%;
+  }
+</style>
+</head>
+<body>
+
+<h1>The class Attribute</h1>
+<p>El atributo class especifica una o mas clases para un elemento HTML. Las clases son usadas por CSS y JavaScript para seleccionar y acceder a elementos especificos.</p>
+
+<h2>Multiples elementos con la misma clase</h2>
+<p>Varios elementos HTML pueden compartir la misma clase.</p>
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<h2>Usar class con elementos especificos (element.class)</h2>
+<p>Para seleccionar solo un tipo de elemento con una clase especifica, se escribe el nombre del elemento, un punto, y el nombre de la clase.</p>
+<p class="large">Este parrafo tiene la clase large, que aumenta el tamano de letra.</p>
+
+<h2>Multiples clases en un mismo elemento</h2>
+<p>Un elemento HTML puede tener mas de una clase, separadas por un espacio.</p>
+<h1 class="intro important">Header 1 con dos clases</h1>
+<p>A paragraph.</p>
+
+<h2>Sintaxis del atributo class</h2>
+<p>El atributo class no debe empezar con un numero, ya que puede causar problemas en algunos navegadores.</p>
+
+<h2>Class y JavaScript</h2>
+<p>La clase tambien puede ser usada por JavaScript para acceder y manipular elementos con ese nombre de clase especifico.</p>
+<div class="city" id="miCiudad">
+  <h2>Berlin</h2>
+  <p>Berlin is the capital of Germany.</p>
+</div>
+<button onclick="cambiarColor()">Cambiar color</button>
+<script>
+function cambiarColor() {
+  var elementos = document.getElementsByClassName("city");
+  elementos[0].style.backgroundColor = "yellow";
+}
+</script>
+
+<head>
+<style>
+.city {
+  background-color: tomato;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+
+</body>
+</html>
