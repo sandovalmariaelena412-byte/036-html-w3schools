@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+ul.menu li {
+  float: left;
+}
+ul.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+ul.menu li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<h1>HTML Lists</h1>
+<p>Las listas en HTML permiten agrupar elementos relacionados.</p>
+
+<h2>Unordered HTML List</h2>
+<p>Una lista desordenada empieza con la etiqueta ul. Cada elemento empieza con la etiqueta li. Por defecto se marcan con vinetas.</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Choose List Item Marker - Disc</h2>
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Choose List Item Marker - Circle</h2>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Choose List Item Marker - Square</h2>
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Choose List Item Marker - None</h2>
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Nested HTML Lists</h2>
+<p>Las listas pueden anidarse (una lista dentro de otra). Un elemento li puede contener una nueva lista, o incluso otros elementos como imagenes y enlaces.</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<h2>Horizontal List with CSS</h2>
+<p>Las listas se pueden estilizar de muchas formas con CSS; una forma popular es convertirlas en un menu horizontal.</p>
+<ul class="menu">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h2>Ordered HTML List</h2>
+<p>Una lista ordenada empieza con la etiqueta ol. Cada elemento empieza con la etiqueta li. Por defecto se marcan con numeros.</p>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h2>Ordered List - Type Attribute (1, A, a, I, i)</h2>
+<p>El atributo type de la etiqueta ol define el tipo de marcador de la lista.</p>
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ol>
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ol>
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ol>
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ol>
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ol>
+
+<h2>Ordered List - Start Attribute</h2>
+<p>Por defecto, una lista ordenada empieza a contar desde 1. El atributo start permite iniciar desde otro numero.</p>
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h2>Ordered List - Reversed Attribute</h2>
+<p>El atributo reversed hace que la lista cuente hacia abajo en vez de hacia arriba.</p>
+<ol reversed>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h2>Ordered List - Value Attribute</h2>
+<p>El atributo value en un solo li fuerza a que ese elemento tenga un numero especifico.</p>
+<ol>
+  <li value="5">Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h2>HTML Description Lists</h2>
+<p>Una lista de descripcion es una lista de terminos con su descripcion. La etiqueta dl define la lista, dt define el termino, y dd describe el termino.</p>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2>Description List with Multiple Descriptions</h2>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dd>Contains caffeine</dd>
+</dl>
+
+</body>
+</html>
